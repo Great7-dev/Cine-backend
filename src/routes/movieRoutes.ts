@@ -11,7 +11,7 @@ const router = express.Router();
 /**
  * @swagger
  * /popular:
- *   get:
+ *    get:
  *      summary: Get popular movies
  *      description: Retrieve a list of popular movies.
  *      responses:
@@ -22,25 +22,25 @@ const router = express.Router();
  * @swagger
  * /search:
  *   get:
- *      summary: Search for movies
- *      description: Search for movies by title or other criteria.
- *      parameters:
- *        - in: query
- *          name: query
- *          required: true
+ *     summary: Search for movies
+ *     description: Search for movies by title or other criteria.
+ *     parameters:
+ *       - in: query
+ *         name: query
+ *         required: true
  *         schema:
- *          type: string
+ *           type: string
  *         description: The search query string.
  *     responses:
- *        200:
- *          description: A list of movies matching the search criteria.
- *        400:
- *          description: Invalid search query.
+ *       200:
+ *         description: A list of movies matching the search criteria.
+ *       400:
+ *         description: Invalid search query.
  */
 /**
  * @swagger
  * /trending/{timeWindow}:
- *   get:
+ *    get:
  *      summary: Get trending movies
  *      description: Retrieve a list of trending movies for a specific time window.
  *      parameters:
@@ -58,7 +58,7 @@ const router = express.Router();
 /**
  * @swagger
  * /top-rated:
- *   get:
+ *    get:
  *      summary: Get top-rated movies
  *      description: Retrieve a list of top-rated movies.
  *      responses:
@@ -68,7 +68,7 @@ const router = express.Router();
 /**
  * @swagger
  * /upcoming:
- *   get:
+ *    get:
  *      summary: Get upcoming movies
  *      description: Retrieve a list of upcoming movies.
  *      responses:
@@ -78,7 +78,7 @@ const router = express.Router();
 /**
  * @swagger
  * /genre/{genreId}:
- *   get:
+ *    get:
  *      summary: Get movies by genre
  *      description: Retrieve a list of movies for a specific genre.
  *      parameters:
@@ -95,7 +95,7 @@ const router = express.Router();
 /**
  * @swagger
  * /{movieId}:
- *   get:
+ *    get:
  *      summary: Get movie details
  *      description: Retrieve detailed information about a specific movie.
  *      parameters:
@@ -112,7 +112,7 @@ const router = express.Router();
 /**
  * @swagger
  * /{movieId}/videos:
- *   get:
+ *    get:
  *      summary: Get movie videos
  *      description: Retrieve videos related to a specific movie.
  *      parameters:
@@ -129,7 +129,7 @@ const router = express.Router();
 /**
  * @swagger
  * /{movieId}/credits:
- *   get:
+ *    get:
  *      summary: Get movie credits
  *      description: Retrieve credits (cast and crew) for a specific movie.
  *      parameters:
@@ -146,7 +146,7 @@ const router = express.Router();
 /**
  * @swagger
  * /genres:
- *   get:
+ *    get:
  *      summary: Get movie genres
  *      description: Retrieve a list of movie genres.
  *      responses:
